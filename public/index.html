@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Bubble photos online</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="css/farbtastic.css" />
+	<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.12.custom.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="js/jquery.beforeafter.js"></script>
+	<script type="text/javascript" src="js/farbtastic.js"></script>
+	<script type="text/javascript" src="js/main.js?v=2"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37954024-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+	<div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '213089405377059',
+          xfbml      : true,
+          cookie     : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk/debug.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+	<div id="work-page">
+		<div id="left-pane">
+			<ul id="left-menu">
+				<li><a href="#">
+					<span class="numbering">1</span> 
+					Open the foto
+				</a></li>
+				<li><a href="#">
+					<span class="numbering">2</span>
+					Select clothing
+				</a></li>
+        <li><a href="#">
+					<span class="numbering">3</span>
+					Select face
+				</a></li>
+				<li><a href="#">
+					<span class="numbering">4</span>
+					Tune details and share
+				</a></li>
+			</ul>
+      <div id="page1-toolbar">
+        <a href="http://www.youtube.com/watch?v=VpNNjFM9guY" id="video-tutorial">
+					Video tutorial
+				</a>
+				<div id="complaints">
+					You can complain at the train station or at <a href="mailto:bikini@gay-porn.cz">bikini@gay-porn.cz</a>
+				</div>
+      </div>
+			<div id="paths-toolbar" class="hidden">
+				<a href="#" id="path-add"  class="icon">
+					<img src="img/add-icon.png" alt="add"/>
+				</a>
+				<a href="#" id="path-remove"  class="icon">
+					<img src="img/remove-icon.png" alt="remove"/>
+				</a>
+        <div style="width:200px;margin:auto">
+         Click image to add points and mark the clothes. Use the plus button to start with new piece of garment.
+        </div> 
+				<div id="next">Next page>></div>
+			</div>
+      <div id="face-toolbar" class="hidden">
+				<a href="#" id="face-remove" class="icon">
+					<img src="img/remove-icon.png" alt="remove selected face"/>
+				</a>
+        <div style="width:200px;margin:auto">
+          Click and drag with your mouse to draw a circle around the face.
+          </div>
+        <div id="next2">Next page>></div>
+      </div>
+			<div id="tuning-toolbar" class="hidden">
+				<div id="color-picker"></div>
+				<label id="padding-slider-label">Bubble padding</label>
+				<div id="padding-slider"></div>
+				<label id="circles-slider-label">Number of bubbles</label>
+				<div id="circles-slider"></div>
+        <label id="max-size-slider-label">Bubble size limit</label>
+				<div id="max-size-slider"></div>
+				<div id="progress">
+				</div>
+			</div>
+		</div>
+		<div id="work-area">
+			<div id="page-get-photo">
+				<h1>Select your bikini photo</h1>
+				<input type="file" size="10" id="upload-field" />
+				<!-- <h1>Or download it from the net</h1> -->
+				<input type="text" size="40" id="url-field" class="hidden"/>
+				<div id="i-dont-get-it">What's this bubbling about?</div>
+				<div id="try-more">Alsou try our delicious gay-porn link shortener</div>
+        <div style="color:grey; font-size: 70%;margin-top:20px"> PS: 4chan /b/ archiver discontinued </div>
+			</div>
+			<div id="page-canvas" class="hidden">
+				<canvas id="canvas">
+					Your browser is not supported. Tough life. Try new versions of Safari, Chrome, Firefox or Opera.
+				</canvas>
+				<canvas id="hidden-canvas" class="hidden">
+				</canvas>
+			</div>
+			<div id="page-example" class="hidden">
+				<div id="container">
+				 	<div><img alt="before" src="example/before-1.jpg" width="500" height="375" /></div>
+				 	<div><img alt="after" src="example/after-1.jpg" width="500" height="375" /></div>
+				</div>
+				<div id="ive-got-it">I've got it', it's mormon porn.</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="bottom-bar" class="hidden">
+			<div id="button-facebook">Share on Facebook</div>
+			<div id="button-download">Download</div>
+			<div id="button-imgur">Share on ImgUr</div>
+			<p>
+				<fb:like></fb:like>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
